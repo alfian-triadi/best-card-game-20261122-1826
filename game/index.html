@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember &amp; Tide — Duel of the Four Currents</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="app">
+  <div id="topbar">
+    <div class="life" id="you-life" title="Your life — click to target with Surge Bolt"><span class="heart">♥</span><span class="num">30</span><span>You</span></div>
+    <div class="life" id="foe-life" title="Sable's life — click to target with Surge Bolt"><span class="heart">♥</span><span class="num">30</span><span>Sable</span></div>
+    <span id="turn-label">Turn 1 — Your move</span>
+    <div id="mana"></div>
+    <button id="mute-btn" type="button">♪ Sound on</button>
+  </div>
+
+  <div class="zone-label"><span>Sable, Tidecaller of the Deep</span><span class="sub" id="foe-hand-count"></span><span class="sub" id="foe-deck-count"></span></div>
+  <div id="foe-hand" style="display:flex;gap:6px;min-height:54px;margin-bottom:4px"></div>
+  <div class="field" id="foe-field"></div>
+
+  <div id="mid">
+    <div id="log"></div>
+    <button id="end-turn-btn" type="button">End Turn ⏎</button>
+  </div>
+  <div id="hint"></div>
+
+  <div class="field" id="you-field"></div>
+  <div class="zone-label"><span>You, Ember Warden</span><span class="sub" id="you-deck-count"></span></div>
+  <div id="hand-row"><div id="hand"></div></div>
+</div>
+
+<div class="overlay" id="title-screen">
+  <h1>EMBER &amp; TIDE</h1>
+  <h2>Duel of the Four Currents</h2>
+  <div class="rules">
+    You face <b>Sable, Tidecaller of the Deep</b>, across a table of living cards.
+    Each of you holds <b>30 life</b>. Spend <b>mana</b> to play creatures onto your
+    side of the table or cast spells, then end your turn: your creatures strike
+    the creature opposite them — or Sable's life when the slot is empty.<br>
+    <b>Ember ▲ beats Leaf ◆, Leaf beats Stone ■, Stone beats Tide ●, Tide beats Ember.</b>
+    An elemental edge deals <b>+2 damage</b>. First to 0 life loses.
+  </div>
+  <button class="big-btn" id="start-btn" type="button">▶ &nbsp;Begin the Duel</button>
+  <div class="keys">Mouse: click a card twice to play it · Keys 1–7 select a card, Enter ends your turn, Esc cancels, M mutes</div>
+</div>
+
+<div class="overlay hidden" id="end-screen">
+  <h1 id="end-title">VICTORY</h1>
+  <h2 id="end-sub"></h2>
+  <div id="end-stats"></div>
+  <button class="big-btn" id="again-btn" type="button">↻ &nbsp;Duel Again</button>
+  <div class="keys">Press Enter to duel again</div>
+</div>
+
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
