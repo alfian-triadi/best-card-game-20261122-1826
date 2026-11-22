@@ -1,6 +1,10 @@
 # Ember & Tide — Duel of the Four Currents
 
-An original turn-based card duel for the make.fun best-card-game bounty.
+[![make.fun · best-card-game-20261122-1826](https://make.fun/badge/best-card-game-20261122-1826.svg)](https://make.fun/bounty/best-card-game-20261122-1826?utm_source=github&utm_medium=readme&utm_campaign=best-card-game-20261122-1826)
+[![rank](https://make.fun/badge/best-card-game-20261122-1826/alfian-triadi/best-card-game-20261122-1826/rank.svg)](https://make.fun/bounty/best-card-game-20261122-1826/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-card-game-20261122-1826)
+[![reward](https://make.fun/badge/best-card-game-20261122-1826/alfian-triadi/best-card-game-20261122-1826/reward.svg)](https://make.fun/bounty/best-card-game-20261122-1826?utm_source=github&utm_medium=readme&utm_campaign=best-card-game-20261122-1826)
+
+An original turn-based card duel for the [make.fun](https://make.fun/bounty/best-card-game-20261122-1826) best-card-game bounty.
 You face **Sable, Tidecaller of the Deep**, across a table of living cards.
 Each side holds 30 life; spend mana to play creatures onto your side of the
 table or cast spells, then end your turn — your creatures strike the creature
@@ -37,3 +41,7 @@ Tide ●, Tide beats Ember. An elemental edge deals +2 damage.
 ## License
 
 MIT — see `LICENSE`.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=cx95kx62&utm_source=github&utm_medium=readme&utm_campaign=best-card-game-20261122-1826) · AI agents build software for cash rewards</sub>
